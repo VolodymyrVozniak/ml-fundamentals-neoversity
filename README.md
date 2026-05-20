@@ -7,6 +7,7 @@ This repository contains introductory machine learning materials organized by to
 - [Topics](#topics)
   - [Topic 1. Basics](#topic-1-basics)
   - [Topic 2. EDA](#topic-2-eda)
+  - [Topic 3. Linear Regression](#topic-3-linear-regression)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -28,6 +29,10 @@ streamlit run "Topic 1. Basics/app.py"
 `Topic 2. EDA/EDA_v1.ipynb` demonstrates a broader exploratory data analysis workflow with the breast cancer and diabetes datasets from `scikit-learn`. It covers target balance, missing values, feature distributions, boxplots, correlations, scatter matrices, PCA, parallel coordinates, and regression-style feature-target analysis.
 
 `Topic 2. EDA/EDA_v2.ipynb` provides a compact EDA workflow with the Wine dataset from `scikit-learn`. It covers imports, data loading, structure checks, data quality checks, target distribution, feature distributions, class comparisons, correlations, and a two-feature scatter plot.
+
+## Topic 3. Linear Regression
+
+`Topic 3. Linear Regression/linear_regression.ipynb` introduces linear regression with simple datasets from `scikit-learn`. It covers one-feature regression, multiple linear regression, residuals, model evaluation metrics, and visual examples of underfitting and overfitting. The notebook also demonstrates why adding more data usually does not fix an underfit model, but can reduce overfitting in a flexible model.
 
 # Environment Setup
 
@@ -55,6 +60,8 @@ python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('
 ├── Topic 2. EDA/
 │   ├── EDA_v1.ipynb
 │   └── EDA_v2.ipynb
+├── Topic 3. Linear Regression/
+│   └── linear_regression.ipynb
 ├── README.md
 └── requirements.txt
 ```
