@@ -10,6 +10,7 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 3. Linear Regression](#topic-3-linear-regression)
   - [Topic 4. Time Series](#topic-4-time-series)
   - [Topic 5. Logistic Regression](#topic-5-logistic-regression)
+  - [Topic 6. Decision Trees](#topic-6-decision-trees)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -44,6 +45,10 @@ streamlit run "Topic 1. Basics/app.py"
 
 `Topic 5. Logistic Regression/logistic_regression.ipynb` introduces logistic regression with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It covers sigmoid probabilities, scaling and coefficients, confusion matrices, why accuracy can be misleading on imbalanced binary classification, and how F1/threshold selection better reflect positive-class performance.
 
+## Topic 6. Decision Trees
+
+`Topic 6. Decision Trees/decision_trees.ipynb` introduces Decision Tree classification with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It focuses on how trees work under the hood: threshold rules, entropy, Gini impurity, information gain, a manual split calculation, tree inspection, prediction paths, feature importances, and overfitting control with tree size constraints.
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -76,6 +81,8 @@ python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('
 │   └── time_series.ipynb
 ├── Topic 5. Logistic Regression/
 │   └── logistic_regression.ipynb
+├── Topic 6. Decision Trees/
+│   └── decision_trees.ipynb
 ├── README.md
 └── requirements.txt
 ```
