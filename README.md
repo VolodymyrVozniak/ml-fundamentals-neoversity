@@ -11,6 +11,7 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 4. Time Series](#topic-4-time-series)
   - [Topic 5. Logistic Regression](#topic-5-logistic-regression)
   - [Topic 6. Decision Trees](#topic-6-decision-trees)
+  - [Topic 7. KNN - Naive Bayes](#topic-7-knn---naive-bayes)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -49,6 +50,10 @@ streamlit run "Topic 1. Basics/app.py"
 
 `Topic 6. Decision Trees/decision_trees.ipynb` introduces Decision Tree classification with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It focuses on how trees work under the hood: threshold rules, entropy, Gini impurity, information gain, a manual split calculation, tree inspection, prediction paths, feature importances, and overfitting control with tree size constraints.
 
+## Topic 7. KNN - Naive Bayes
+
+`Topic 7. KNN - Naive Bayes/knn_naive_bayes.ipynb` introduces K-Nearest Neighbors and Gaussian Naive Bayes classification with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It covers distance-based prediction, why scaling matters for KNN, choosing `k` with cross-validation, two-feature KNN decision regions, Gaussian Naive Bayes assumptions, learned class-feature statistics, confusion matrices, and side-by-side model comparison.
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -83,6 +88,8 @@ python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('
 │   └── logistic_regression.ipynb
 ├── Topic 6. Decision Trees/
 │   └── decision_trees.ipynb
+├── Topic 7. KNN - Naive Bayes/
+│   └── knn_naive_bayes.ipynb
 ├── README.md
 └── requirements.txt
 ```
