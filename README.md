@@ -12,6 +12,7 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 5. Logistic Regression](#topic-5-logistic-regression)
   - [Topic 6. Decision Trees](#topic-6-decision-trees)
   - [Topic 7. KNN - Naive Bayes](#topic-7-knn---naive-bayes)
+  - [Topic 8. SVM](#topic-8-svm)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -54,6 +55,10 @@ streamlit run "Topic 1. Basics/app.py"
 
 `Topic 7. KNN - Naive Bayes/knn_naive_bayes.ipynb` introduces K-Nearest Neighbors and Gaussian Naive Bayes classification with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It covers distance-based prediction, why scaling matters for KNN, choosing `k` with cross-validation, two-feature KNN decision regions, Gaussian Naive Bayes assumptions, learned class-feature statistics, confusion matrices, and side-by-side model comparison.
 
+## Topic 8. SVM
+
+`Topic 8. SVM/svm.ipynb` introduces Support Vector Machine classification with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It focuses on how the regularization parameter `C` changes the learned margin, support vectors, model performance, and two-feature decision areas for linear and RBF kernels.
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -90,6 +95,8 @@ python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('
 │   └── decision_trees.ipynb
 ├── Topic 7. KNN - Naive Bayes/
 │   └── knn_naive_bayes.ipynb
+├── Topic 8. SVM/
+│   └── svm.ipynb
 ├── README.md
 └── requirements.txt
 ```
