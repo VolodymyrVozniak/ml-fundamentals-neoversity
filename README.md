@@ -13,6 +13,8 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 6. Decision Trees](#topic-6-decision-trees)
   - [Topic 7. KNN - Naive Bayes](#topic-7-knn---naive-bayes)
   - [Topic 8. SVM](#topic-8-svm)
+  - [Topic 9. Ensembles](#topic-9-ensembles)
+  - [Topic 10. Feature Engineering](#topic-10-feature-engineering)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -59,6 +61,20 @@ streamlit run "Topic 1. Basics/app.py"
 
 `Topic 8. SVM/svm.ipynb` introduces Support Vector Machine classification with the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`. It focuses on how the regularization parameter `C` changes the learned margin, support vectors, model performance, and two-feature decision areas for linear and RBF kernels.
 
+## Topic 9. Ensembles
+
+`Topic 9. Ensembles/ensembles.ipynb` introduces ensemble learning with Logistic Regression as a linear baseline, a shallow Decision Tree for intuition, and `scikit-learn` compatible LightGBM and XGBoost classifiers. It uses the Forest Cover Type dataset from `scikit-learn` when available, with a bundled Digits fallback if the larger dataset cannot be downloaded. The notebook compares accuracy, balanced accuracy, macro F1, per-class reports, confusion matrices, feature importances, and a simple LightGBM + XGBoost soft-voting ensemble.
+
+This topic has optional extra dependencies pinned in `Topic 9. Ensembles/requirements-ensembles.txt`:
+
+```bash
+python -m pip install -r "Topic 9. Ensembles/requirements-ensembles.txt"
+```
+
+## Topic 10. Feature Engineering
+
+`Topic 10. Feature Engineering/feature_engineering.ipynb` introduces feature engineering for tabular machine learning with a fully offline synthetic customer churn dataset. It covers numeric imputation and scaling, log transforms for skewed features, one-hot encoding with unknown-category handling, date-derived tenure and recency features, interaction features, TF-IDF text features, a leakage-safe `ColumnTransformer` pipeline, model comparison, confusion matrices, and coefficient-based feature inspection.
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -97,6 +113,11 @@ python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('
 │   └── knn_naive_bayes.ipynb
 ├── Topic 8. SVM/
 │   └── svm.ipynb
+├── Topic 9. Ensembles/
+│   ├── ensembles.ipynb
+│   └── requirements-ensembles.txt
+├── Topic 10. Feature Engineering/
+│   └── feature_engineering.ipynb
 ├── README.md
 └── requirements.txt
 ```
@@ -112,3 +133,8 @@ The dependency versions are pinned in `requirements.txt` and include:
 - `matplotlib`
 - `streamlit`
 - `altair`
+
+Topic 9 additionally uses the optional pinned packages:
+
+- `lightgbm==4.3.0`
+- `xgboost==2.0.3`
