@@ -15,6 +15,7 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 8. SVM](#topic-8-svm)
   - [Topic 9. Ensembles](#topic-9-ensembles)
   - [Topic 10. Feature Engineering](#topic-10-feature-engineering)
+  - [Topic 11. Dimensionality Reduction](#topic-11-dimensionality-reduction)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -75,6 +76,10 @@ python -m pip install -r "Topic 9. Ensembles/requirements-ensembles.txt"
 
 `Topic 10. Feature Engineering/feature_engineering.ipynb` introduces feature engineering for tabular machine learning with a fully offline synthetic customer churn dataset. It covers numeric imputation and scaling, log transforms for skewed features, one-hot encoding with unknown-category handling, date-derived tenure and recency features, interaction features, TF-IDF text features, a leakage-safe `ColumnTransformer` pipeline, model comparison, confusion matrices, and coefficient-based feature inspection.
 
+## Topic 11. Dimensionality Reduction
+
+`Topic 11. Dimensionality Reduction/dimensionality_reduction.ipynb` introduces dimensionality reduction with the handwritten digits dataset from `scikit-learn`. It compares PCA, t-SNE, and UMAP for 2D and 3D visualization, including sample digit images, PCA variance inspection, side-by-side projection plots, runtime and trustworthiness comparisons, and UMAP parameter intuition.
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -89,7 +94,7 @@ python -m pip install -r requirements.txt
 To verify the environment:
 
 ```bash
-python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('Environment ready')"
+python -c "import numpy, pandas, sklearn, matplotlib, umap, streamlit, altair; print('Environment ready')"
 ```
 
 # Project Structure
@@ -118,6 +123,8 @@ python -c "import numpy, pandas, sklearn, matplotlib, streamlit, altair; print('
 │   └── requirements-ensembles.txt
 ├── Topic 10. Feature Engineering/
 │   └── feature_engineering.ipynb
+├── Topic 11. Dimensionality Reduction/
+│   └── dimensionality_reduction.ipynb
 ├── README.md
 └── requirements.txt
 ```
@@ -131,6 +138,7 @@ The dependency versions are pinned in `requirements.txt` and include:
 - `scikit-learn`
 - `scipy`
 - `matplotlib`
+- `umap-learn`
 - `streamlit`
 - `altair`
 
