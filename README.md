@@ -16,6 +16,7 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 9. Ensembles](#topic-9-ensembles)
   - [Topic 10. Feature Engineering](#topic-10-feature-engineering)
   - [Topic 11. Dimensionality Reduction](#topic-11-dimensionality-reduction)
+  - [Topic 12. Clustering](#topic-12-clustering)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -80,6 +81,10 @@ python -m pip install -r "Topic 9. Ensembles/requirements-ensembles.txt"
 
 `Topic 11. Dimensionality Reduction/dimensionality_reduction.ipynb` introduces dimensionality reduction with the handwritten digits dataset from `scikit-learn`. It compares PCA, t-SNE, and UMAP for 2D and 3D visualization, including sample digit images, PCA variance inspection, side-by-side projection plots, runtime and trustworthiness comparisons, and UMAP parameter intuition.
 
+## Topic 12. Clustering
+
+`Topic 12. Clustering/clustering.ipynb` introduces unsupervised clustering with an offline two-moons dataset that includes background noise. It compares KMeans, HDBSCAN, and Spectral Clustering with side-by-side cluster plots, centroid and density intuition, nearest-neighbor graph visualization, Adjusted Rand Index, silhouette scores, noise handling, and parameter sweeps for `k`, `min_cluster_size`, `min_samples`, and `n_neighbors`.
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -125,6 +130,8 @@ python -c "import numpy, pandas, sklearn, matplotlib, umap, streamlit, altair; p
 │   └── feature_engineering.ipynb
 ├── Topic 11. Dimensionality Reduction/
 │   └── dimensionality_reduction.ipynb
+├── Topic 12. Clustering/
+│   └── clustering.ipynb
 ├── README.md
 └── requirements.txt
 ```
