@@ -83,6 +83,11 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Weights & Biases local logs and lesson-generated artifacts
+wandb/
+**/wandb/
+**/wandb_local_artifacts/
+
 # IPython
 profile_default/
 ipython_config.py

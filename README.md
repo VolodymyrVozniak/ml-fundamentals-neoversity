@@ -17,6 +17,8 @@ This repository contains introductory machine learning materials organized by to
   - [Topic 10. Feature Engineering](#topic-10-feature-engineering)
   - [Topic 11. Dimensionality Reduction](#topic-11-dimensionality-reduction)
   - [Topic 12. Clustering](#topic-12-clustering)
+  - [Topic 13. Pipelines](#topic-13-pipelines)
+  - [Topic 14. MLOps](#topic-14-mlops)
 - [Environment Setup](#environment-setup)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -85,6 +87,20 @@ python -m pip install -r "Topic 9. Ensembles/requirements-ensembles.txt"
 
 `Topic 12. Clustering/clustering.ipynb` introduces unsupervised clustering with an offline two-moons dataset that includes background noise. It compares KMeans, HDBSCAN, and Spectral Clustering with side-by-side cluster plots, centroid and density intuition, nearest-neighbor graph visualization, Adjusted Rand Index, silhouette scores, noise handling, and parameter sweeps for `k`, `min_cluster_size`, `min_samples`, and `n_neighbors`.
 
+## Topic 13. Pipelines
+
+`Topic 13. Pipelines/pipelines.ipynb` introduces `scikit-learn` machine learning pipelines with a fully offline marketplace-order risk dataset. It demonstrates `Pipeline` and `ColumnTransformer` for imputation, scaling, one-hot encoding, feature selection, logistic regression, leakage-safe cross-validation, `GridSearchCV` tuning, feature inspection, raw-data prediction with missing and unseen categories, and saving/reloading the fitted workflow.
+
+## Topic 14. MLOps
+
+`Topic 14. MLOps/mlops_wandb.ipynb` introduces MLOps experiment tracking with Weights & Biases. It walks through creating a W&B account, logging in, logging a sklearn dataset artifact, running multiple sklearn training jobs with tracked configs and metrics, logging prediction tables, charts, and model artifacts, and inspecting the W&B UI to compare runs.
+
+This topic has an optional extra dependency pinned in `Topic 14. MLOps/requirements-mlops.txt`:
+
+```bash
+python -m pip install -r "Topic 14. MLOps/requirements-mlops.txt"
+```
+
 # Environment Setup
 
 Create and activate a conda environment, then install the project dependencies from `requirements.txt`:
@@ -132,6 +148,11 @@ python -c "import numpy, pandas, sklearn, matplotlib, umap, streamlit, altair; p
 │   └── dimensionality_reduction.ipynb
 ├── Topic 12. Clustering/
 │   └── clustering.ipynb
+├── Topic 13. Pipelines/
+│   └── pipelines.ipynb
+├── Topic 14. MLOps/
+│   ├── mlops_wandb.ipynb
+│   └── requirements-mlops.txt
 ├── README.md
 └── requirements.txt
 ```
@@ -153,3 +174,7 @@ Topic 9 additionally uses the optional pinned packages:
 
 - `lightgbm==4.3.0`
 - `xgboost==2.0.3`
+
+Topic 14 additionally uses the optional pinned package:
+
+- `wandb==0.26.1`
